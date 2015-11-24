@@ -24,18 +24,17 @@ you can get this certficate from curl -O https://www.entrust.net/downloads/binar
 Example of your controller function where you want to send notifiation
 
 ```
-    function test_push_notification(){
-        
-        $data['device_token'] = 'device token of your device';
-        $data['message'] = 'Hello this is testing from cakephp';
-        $data['tag'] = "1";
-        $result = $this->ApplePush->sendNotification($data);
-        if(isset($result['error'])) {
-            echo $result['error'];
-        } else {
-        	echo "Notification sent successfully!";
-        }
-    } 
+function test_push_notification(){
+    $data['device_token'] = 'device token of your device';
+    $data['message'] = 'Hello this is testing from cakephp';
+    $data['tag'] = "1";
+    $result = $this->ApplePush->sendNotification($data);
+    if (isset($result['error'])) {
+        echo $result['error'];
+    } else {
+    	echo "Notification sent successfully!";
+    }
+} 
 ```
 
 Some Common commands for creating the permission certificate
