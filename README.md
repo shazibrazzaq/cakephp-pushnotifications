@@ -1,6 +1,6 @@
 # cakephp-pushnotifications
 
-How to intall
+How to install
 --------------
 
 Copy the component in app/Controller/Component folder
